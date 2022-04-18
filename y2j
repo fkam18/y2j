@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+# 220418 fkam
+import json
+import yaml
+import sys
+
+s = sys.stdin.read()
+y1 = yaml.safe_load(s)
+
+y=json.dumps(y1, indent=4)
+print(y)
+
+exit
